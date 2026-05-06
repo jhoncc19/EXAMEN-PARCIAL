@@ -1,1 +1,199 @@
-html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Continental | Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="top-bar-contact">
+                    <i class="bi bi-envelope-fill"></i> informes@continental.edu.pe
+                    <span class="ms-3"><i class="bi bi-telephone-fill"></i> +51 1 234 5678</span>
+                </div>
+                <div class="top-bar-links">
+                    <a href="#"><i class="bi bi-person-circle"></i> Portal Estudiante</a>
+                    <a href="#"><i class="bi bi-journal-bookmark-fill"></i> Aula Virtual</a>
+                    <a href="#"><i class="bi bi-geo-alt-fill"></i> Sedes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-building fs-3 me-2"></i> Universidad Continental
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carreras.html">Carreras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="internacional.html">Internacional</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investigacion.html">Investigación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experiencias.html">Experiencias UC</a></li>
+                    <li class="nav-item"><a class="nav-link" href="solicita.html">Solicita Info</a></li>
+                </ul>
+                <a href="solicita.html" class="btn btn-inscribirse ms-lg-3 rounded-pill px-4" id="btnInscripcion">
+                    Inscríbete <i class="bi bi-arrow-right-short"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1>Estudia en la Universidad Continental y obtén un título <span class="text-highlight">internacional</span></h1>
+                    <p class="lead mt-3">Desarrolla habilidades tecnológicas y conecta con oportunidades internacionales.</p>
+                    <div class="d-flex gap-3 mt-4 flex-wrap">
+                        <a href="carreras.html" class="btn btn-primary-custom rounded-pill px-4 py-2">Ver carreras <i class="bi bi-book"></i></a>
+                        <a href="solicita.html" class="btn btn-outline-light rounded-pill px-4 py-2">Asesoría virtual <i class="bi bi-headset"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                    <div class="row g-3">
+                        <div class="col-4">
+                            <div class="bg-white bg-opacity-15 rounded-4 p-3">
+                                <h3 class="text-highlight mb-0 counter" data-target="27">0</h3>
+                                <small>años</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="bg-white bg-opacity-15 rounded-4 p-3">
+                                <h3 class="text-highlight mb-0 counter" data-target="33">0</h3>
+                                <small>carreras</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="bg-white bg-opacity-15 rounded-4 p-3">
+                                <h3 class="text-highlight mb-0 counter" data-target="112">0</h3>
+                                <small>posgrados</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATENCIÓN VIRTUAL -->
+    <section class="py-5 section-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card-hover card border-0 shadow-sm rounded-4 h-100">
+                        <div class="card-body p-4">
+                            <i class="bi bi-chat-dots-fill fs-1 text-highlight"></i>
+                            <h4 class="mt-3">Atención Virtual – Campus Los Olivos</h4>
+                            <p>Recibe asesoría educativa en tiempo real y resuelve tus dudas sin necesidad de trasladarte.</p>
+                            <a href="solicita.html" class="btn-link-custom">Conectar ahora →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-hover card border-0 shadow-sm rounded-4 h-100">
+                        <div class="card-body p-4">
+                            <i class="bi bi-chat-dots-fill fs-1 text-highlight"></i>
+                            <h4 class="mt-3">Atención Virtual – Campus Arequipa</h4>
+                            <p>Conéctate con un asesor y recibe información sobre carreras, inversión y proceso de admisión.</p>
+                            <a href="solicita.html" class="btn-link-custom">Conectar ahora →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACREDITACIÓN -->
+    <section class="py-5 section-gradient text-center">
+        <div class="container">
+            <span class="badge bg-purple-custom px-3 py-2 rounded-pill">★ Acreditación Internacional</span>
+            <h2 class="mt-3">Tres maestrías acreditadas por <span class="text-highlight">ACBSP</span></h2>
+            <p class="lead">Accede a estándares académicos globales que potencian tu empleabilidad.</p>
+        </div>
+    </section>
+
+    <!-- CIFRAS -->
+    <section class="py-5 section-purple text-center">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-6"><h2 class="display-4 fw-bold text-highlight">27</h2><p>años de experiencia</p></div>
+                <div class="col-md-3 col-6"><h2 class="display-4 fw-bold text-highlight">3</h2><p>modalidades de estudio</p></div>
+                <div class="col-md-3 col-6"><h2 class="display-4 fw-bold text-highlight">33</h2><p>carreras pregrado</p></div>
+                <div class="col-md-3 col-6"><h2 class="display-4 fw-bold text-highlight">112</h2><p>programas posgrado</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 RAZONES -->
+    <section class="py-5 section-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">5 razones para elegir la Universidad Continental</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4"><div class="card-hover card p-4 text-center h-100"><div class="display-1 text-highlight opacity-25">01</div><h5>Experiencias formativas memorables</h5></div></div>
+                <div class="col-md-4"><div class="card-hover card p-4 text-center h-100"><div class="display-1 text-highlight opacity-25">02</div><h5>Liderazgo y actitud emprendedora</h5></div></div>
+                <div class="col-md-4"><div class="card-hover card p-4 text-center h-100"><div class="display-1 text-highlight opacity-25">03</div><h5>Propuesta educativa internacional</h5></div></div>
+                <div class="col-md-6"><div class="card-hover card p-4 text-center h-100"><div class="display-1 text-highlight opacity-25">04</div><h5>Aprendizaje personalizado</h5></div></div>
+                <div class="col-md-6"><div class="card-hover card p-4 text-center h-100"><div class="display-1 text-highlight opacity-25">05</div><h5>Empleabilidad</h5></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5><i class="bi bi-building me-2"></i> Universidad Continental</h5>
+                    <p class="small">Somos parte de Continental International Education (CIE) con presencia en 13 países.</p>
+                    <div class="social-icons">
+                        <i class="bi bi-facebook"></i> <i class="bi bi-twitter-x"></i> <i class="bi bi-instagram"></i> <i class="bi bi-linkedin"></i>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h6>Enlaces</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="carreras.html">Carreras</a></li>
+                        <li><a href="internacional.html">Internacional</a></li>
+                        <li><a href="investigacion.html">Investigación</a></li>
+                        <li><a href="experiencias.html">Experiencias UC</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Sedes</h6>
+                    <ul class="list-unstyled small">
+                        <li>Arequipa, Ayacucho, Cusco, Huancayo, Ica, Lima</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Contacto</h6>
+                    <p class="small"><i class="bi bi-envelope"></i> informes@continental.edu.pe</p>
+                    <p class="small"><i class="bi bi-whatsapp"></i> +51 999 888 777</p>
+                    <a href="solicita.html" class="btn btn-outline-light btn-sm rounded-pill">Solicitar información</a>
+                </div>
+            </div>
+            <hr><div class="text-center small">© 2026 Universidad Continental. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
