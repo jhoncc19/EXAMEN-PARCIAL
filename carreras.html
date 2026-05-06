@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Continental | Carreras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="top-bar-contact"><i class="bi bi-envelope-fill"></i> informes@continental.edu.pe <span class="ms-3"><i class="bi bi-telephone-fill"></i> +51 1 234 5678</span></div>
+                <div class="top-bar-links"><a href="#"><i class="bi bi-person-circle"></i> Portal Estudiante</a><a href="#"><i class="bi bi-journal-bookmark-fill"></i> Aula Virtual</a><a href="#"><i class="bi bi-geo-alt-fill"></i> Sedes</a></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-building fs-3 me-2"></i> Universidad Continental</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="carreras.html">Carreras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="internacional.html">Internacional</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investigacion.html">Investigación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experiencias.html">Experiencias UC</a></li>
+                    <li class="nav-item"><a class="nav-link" href="solicita.html">Solicita Info</a></li>
+                </ul>
+                <a href="solicita.html" class="btn btn-inscribirse ms-lg-3 rounded-pill px-4">Inscríbete <i class="bi bi-arrow-right-short"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Nuestras <span class="text-highlight">Carreras</span></h1>
+            <p class="lead">Más de 30 carreras de pregrado en modalidades Presencial, Semipresencial y A Distancia</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <!-- FILTROS -->
+            <div class="filtro-card">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <select class="form-select" id="filtroFacultad">
+                            <option value="todas">Todas las facultades</option>
+                            <option value="empresa">Ciencias de la Empresa</option>
+                            <option value="ingenieria">Ingeniería</option>
+                            <option value="sociales">Ciencias Sociales</option>
+                            <option value="derecho">Derecho</option>
+                            <option value="salud">Salud</option>
+                            <option value="psicologia">Psicología</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select" id="filtroModalidad">
+                            <option value="todas">Todas las modalidades</option>
+                            <option value="presencial">Presencial</option>
+                            <option value="semipresencial">Semipresencial</option>
+                            <option value="distancia">A Distancia</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="buscarCarrera" placeholder="Buscar carrera...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- LISTADO DE CARRERAS -->
+            <div class="row g-4" id="listaCarreras">
+                <!-- Facultad de Ciencias de la Empresa -->
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="empresa" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-graph-up fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Administración y Finanzas</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="empresa" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-people fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Administración y Gestión del Talento Humano</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="empresa" data-modalidad="semipresencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-megaphone fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Administración y Marketing</h5><span class="badge bg-purple-custom me-1">Semipresencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="empresa" data-modalidad="distancia"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-laptop fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Administración y Negocios Digitales</h5><span class="badge bg-purple-custom me-1">A Distancia</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="empresa" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-globe2 fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Administración y Negocios Internacionales</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="empresa" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-calculator fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Contabilidad y Finanzas</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="empresa" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-bar-chart-steps fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Economía</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="empresa" data-modalidad="semipresencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-building fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Administración</h5><span class="badge bg-purple-custom me-1">Semipresencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+
+                <!-- Facultad de Ingeniería -->
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="ingenieria" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-brush fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Arquitectura</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="ingenieria" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-house-door fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Arquitectura y Diseño de Interiores</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="ingenieria" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-tree fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Ingeniería Ambiental</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="ingenieria" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-buildings fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Ingeniería Civil</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="ingenieria" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-gem fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Ingeniería de Minas</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="ingenieria" data-modalidad="distancia"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-pc-display fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Ingeniería de Sistemas e Informática</h5><span class="badge bg-purple-custom me-1">A Distancia</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="ingenieria" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-lighting fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Ingeniería Eléctrica</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="ingenieria" data-modalidad="semipresencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-briefcase fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Ingeniería Empresarial</h5><span class="badge bg-purple-custom me-1">Semipresencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="ingenieria" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-gear fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Ingeniería Industrial</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="ingenieria" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-tools fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Ingeniería Mecánica</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="ingenieria" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-robot fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Ingeniería Mecatrónica</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+
+                <!-- Facultad de Ciencias Sociales -->
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="sociales" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-megaphone fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Ciencias de la Comunicación</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+
+                <!-- Facultad de Derecho -->
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="derecho" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-bank fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Derecho</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+
+                <!-- Facultad de Salud -->
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="salud" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-hospital fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Enfermería</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="salud" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-capsule fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Farmacia y Bioquímica</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="salud" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-heart-pulse fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Medicina Humana</h5><span class="badge bg-purple-custom me-1">Presencial</span><span class="badge bg-purple-custom">Acreditada</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="salud" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-emoji-smile fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Odontología</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="salud" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-activity fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Tecnología Médica - Terapia Física</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="salud" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-micorscope fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Tecnología Médica - Laboratorio Clínico</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="salud" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-image fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Tecnología Médica - Radiología</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="salud" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-egg-fried fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Nutrición y Dietética</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+
+                <!-- Facultad de Psicología -->
+                <div class="col-md-6 col-lg-4 carrera-item" data-facultad="psicologia" data-modalidad="presencial"><div class="card-hover card border-0 shadow-sm rounded-4 h-100"><div class="card-body"><i class="bi bi-chat-heart fs-1 text-highlight"></i><h5 class="fw-bold mt-2">Psicología</h5><span class="badge bg-purple-custom me-1">Presencial</span><hr><a href="solicita.html" class="btn-link-custom">Solicitar info →</a></div></div></div>
+            </div>
+
+            <!-- PAGINACIÓN -->
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4"><h5><i class="bi bi-building me-2"></i> Universidad Continental</h5><p class="small">Somos parte de Continental International Education (CIE) con presencia en 13 países.</p><div class="social-icons"><i class="bi bi-facebook"></i> <i class="bi bi-twitter-x"></i> <i class="bi bi-instagram"></i> <i class="bi bi-linkedin"></i></div></div>
+                <div class="col-md-2"><h6>Enlaces</h6><ul class="list-unstyled"><li><a href="carreras.html">Carreras</a></li><li><a href="internacional.html">Internacional</a></li><li><a href="investigacion.html">Investigación</a></li><li><a href="experiencias.html">Experiencias UC</a></li></ul></div>
+                <div class="col-md-3"><h6>Sedes</h6><ul class="list-unstyled small"><li>Arequipa, Ayacucho, Cusco, Huancayo, Ica, Lima</li></ul></div>
+                <div class="col-md-3"><h6>Contacto</h6><p class="small"><i class="bi bi-envelope"></i> informes@continental.edu.pe</p><p class="small"><i class="bi bi-whatsapp"></i> +51 999 888 777</p><a href="solicita.html" class="btn btn-outline-light btn-sm rounded-pill">Solicitar información</a></div>
+            </div>
+            <hr><div class="text-center small">© 2025 Universidad Continental. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        const filtroFacultad = document.getElementById('filtroFacultad');
+        const filtroModalidad = document.getElementById('filtroModalidad');
+        const buscarCarrera = document.getElementById('buscarCarrera');
+        const items = document.querySelectorAll('.carrera-item');
+        function filtrar() {
+            const facultad = filtroFacultad.value;
+            const modalidad = filtroModalidad.value;
+            const busqueda = buscarCarrera.value.toLowerCase();
+            items.forEach(item => {
+                const matchFacultad = facultad === 'todas' || item.dataset.facultad === facultad;
+                const matchModalidad = modalidad === 'todas' || item.dataset.modalidad === modalidad;
+                const matchBusqueda = item.querySelector('h5').innerText.toLowerCase().includes(busqueda);
+                item.style.display = (matchFacultad && matchModalidad && matchBusqueda) ? '' : 'none';
+            });
+        }
+        filtroFacultad.addEventListener('change', filtrar);
+        filtroModalidad.addEventListener('change', filtrar);
+        buscarCarrera.addEventListener('keyup', filtrar);
+    </script>
+</body>
+</html>
